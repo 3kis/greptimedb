@@ -1,0 +1,14 @@
+version: '3'
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace
+    ports:
+      - "4000:4000"
+      - "4001:4001"
+      - "4002:4002"
+      - "4003:4003"
+    command: /bin/sh -c "while sleep 1000; do :; done"
