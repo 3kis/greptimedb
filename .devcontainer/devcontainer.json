@@ -1,0 +1,8 @@
+{
+	"name": "GreptimeDB Dev Container",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "devcontainer",
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "stopCompose",
+	"postCreateCommand": "/bin/bash -c 'source $HOME/.cargo/env || . $HOME/.cargo/env'"
+  }
