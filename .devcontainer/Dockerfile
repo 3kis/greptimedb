@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 
 # 设置非交互式安装，避免卡在 tzdata 等提示
 ENV DEBIAN_FRONTEND=noninteractive
